@@ -44,7 +44,7 @@ Each project is organized into its own folder, containing weekly submissions, & 
 
 ## Trainer Notes
 
-These projects are developed by students as part of their AICTE internship training. Each folder represents the progress made on a weekly basis, culminating in a final submission. The internship emphasized hands-on experience with:
+Each folder represents the progress made on a weekly basis, culminating in a final submission. The internship emphasized hands-on experience with:
 
 - Data cleaning and transformation
 - Predictive modeling (regression)
@@ -55,7 +55,7 @@ These projects are developed by students as part of their AICTE internship train
 
 ## Datasets
 
-All datasets used are included within their respective project folders and are intended for academic use under the AICTE Internship Program.
+All datasets used are included within their respective project folders.
 
 ---
 
