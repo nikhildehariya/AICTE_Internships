@@ -40,5 +40,5 @@ print(df.columns)
 
 # Pollutants
 
-pollutants = [ 'O2','NO3','NO2','NH4','SO4','PO4','CL']
+pollutants = [ 'O2','NO3','NO2','NH4','SO4','PO4','CL','NH3']
 print(pollutants)
