@@ -29,7 +29,7 @@ if st.button("Predict"):
        # Prepare the Input 
        input_df = pd.DataFrame({"Year": [year],"Station ID": [station_id]})
        input_encoded = pd.get_dummies(input_df, columns=["Station ID"])
-    
+       
        # Align with model cols
        for col in model_cols:
            if col not in  input_encoded.columns:
@@ -38,12 +38,15 @@ if st.button("Predict"):
         
        # Predict
        predicted_pollutants = model.predict(input_encoded)[0]
-       pollutants = ['O2','NO3','NO2','SO4','PO4','CL']
+       pollutants = ['O2','NO3','NO2','SO4','PO4','CL','NH3']
         
        st.subheader(f"Predicted Pollutant Level For Station'{station_id}' in {year}:")
        predicted_values = {}
        for p, val in zip(pollutants, predicted_pollutants):
            st.write(f'{p}: {val:.2f}')
+        
+       chart_df = pd.DataFrame(predicted_pollutants, index=pollutants, columns=["Level"])
+       st.line_chart(chart_df)
         
     
                     
