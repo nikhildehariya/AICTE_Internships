@@ -17,8 +17,8 @@ Due to large model file sizes, the `.pkl` files are hosted externally via Google
 ## 🚀 How to Use
 
 1. Download the model files from the above links
-2. Place them in the same directory as your script (`Water_Quality_Pridiction.ipynb)
+2. Place them in the same directory as your script (`Water_Quality_Prediction.ipynb)
 3. Run the script using:
 
 ```bash
-python Water_Quality_Pridiction.ipynb
+python Water_Quality_Prediction.ipynb
